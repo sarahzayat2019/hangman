@@ -33,6 +33,7 @@ main {
     align-items: center;
     height: 100vh;
 }
+
 main h1 {
     position: fixed;
     top: 31px;
@@ -48,6 +49,7 @@ main h1 {
     height: 100vh;
     padding-top: 120px;
 }
+
 #hangman {
     background: url('images/base.svg') no-repeat center center;
     margin: auto;
@@ -58,13 +60,15 @@ main h1 {
     height: 100%;
 
 }
+
 #base {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative
 }
-#base img.hangman-0{
+
+#base img.hangman-0 {
     position: absolute;
     bottom: 28px;
     left: 15px;
@@ -75,26 +79,31 @@ main h1 {
     left: 71px;
     top: -28px;
 }
+
 #base img.hangman-2 {
     position: absolute;
     left: 0;
     top: -24px;
 }
+
 #base img.hangman-3 {
     position: absolute;
     left: 71px;
     top: -28px;
 }
+
 #base img.hangman-4 {
     position: absolute;
     left: 7px;
     top: 69px;
 }
+
 #base img.hangman-5 {
     position: absolute;
     left: 71px;
     top: 67px;
 }
+
 #start_game {
     display: flex;
     align-items: center;
@@ -145,6 +154,7 @@ main h1 {
     border-bottom-left-radius: 0;
     align-self: flex-start;
 }
+
 .error-input {
     display: none;
     color: white;
@@ -152,6 +162,7 @@ main h1 {
     font-size: 14px;
     font-weight: bold;
 }
+
 .letter-bar {
     display: inline-block;
     margin: 0 10px;
@@ -167,11 +178,13 @@ main h1 {
     height: 3px;
     background-color: white;
 }
+
 #wrong_letters h3 {
     color: white;
     font-size: 16px;
     margin-bottom: 8px;
 }
+
 #wrong_letters span {
     margin: 0 5px;
     font-size: 20px;
@@ -185,13 +198,12 @@ main h1 {
     color: white;
     display: inline-block;
 }
+
 #wrong_letters span:last-child:after {
     content: none;
 }
-/*mediaqury*/
+
 @media screen and (max-width: 768px) {
-
-
     button.primary-btn {
         padding: 8px 32px;
     }
@@ -202,12 +214,16 @@ main h1 {
         height: auto;
 
     }
+
     main h1 {
         font-size: 24px;
         top: 24px;
         width: auto;
-        left: 25px;
+        left: 0;
+        right: 0;
+        margin: auto;
         position: absolute;
+        text-align: center;
     }
 
     .hangman {
@@ -215,15 +231,27 @@ main h1 {
         padding-top: 0;
         height: 85vh;
     }
+
     .game-process {
         width: 100%;
-        height: 50vh;
+        height: 60vh;
+        text-align: center;
     }
+
     .game-assets {
         margin-top: 12px;
     }
+
+    #game {
+        padding: 25px 30px;
+    }
+
     #game h2 {
         font-size: 18px;
         margin-bottom: 12px;
+    }
+    .input-container{
+        align-items: center;
+        justify-content: center;
     }
 }
